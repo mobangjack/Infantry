@@ -62,6 +62,7 @@
 "srv/src/can_srv.o"
 "srv/src/mpu_srv.o"
 "srv/src/rcv_srv.o"
+"srv/src/srv.o"
 "srv/src/tim_srv.o"
 "srv/src/tty_srv.o"
 "stl/StdPeriph_Driver/src/misc.o"

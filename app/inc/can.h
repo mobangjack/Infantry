@@ -50,9 +50,7 @@ extern "C" {
 
 typedef struct
 {
-	/* ZGyro original data feedback */
 	int32_t angle_fdb;    // ZGyro raw angle feedback
-	/* ZGyro original data feedback */
 
 	uint8_t reset;        // ZGyro reset control flag
 	float bias;           // ZGyro bias in radian
@@ -62,11 +60,9 @@ typedef struct
 
 typedef struct
 {
-	/* Motor original data feedback */
 	uint16_t angle_fdb[2];  // Motor encoder raw angle feedback, index 1 is the newest
 	int32_t current_fdb;    // Motor electronic speed controller current feedback
 	int32_t current_ref;    // Motor electronic speed controller current reference
-	/* Motor original data feedback */
 
 	uint8_t reset;        // Motor encoder reset control flag
 	int32_t rnd;          // Motor spinning rounds
@@ -90,3 +86,4 @@ extern Motor_t motor[MOTOR_NUM]; // Motor group
 #endif
 
 #endif
+

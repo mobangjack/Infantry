@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2011-2016, Jack Mo (mobangjack@foxmail.com).
+ * Copyright (c) 2016, Jack Mo (mobangjack@foxmail.com).
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,35 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
-#ifndef __COM_H__
-#define __COM_H__
 
-/***********************************/
-/*          Communication          */
-/***********************************/
+#include "srv.h"
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
-#include "tty.h"
-#include "wdg.h"
-
-#define COM_RX_FIFO_SIZE 256u
-
-#define COM_MSG_ACI 0
-#define COM_MOD_CFG 0x01
-#define COM_MOD_API 0x01
-
-void Com_Init();
-void Com_Proc();
-
-void Tty_Proc(uint8_t data);
-
-#ifdef __cplusplus
-}
-#endif
-
-#endif
 
